@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oceana Theater - Historic 1326-Seat Venue in Brooklyn, NY</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body { 
+      font-family: 'Inter', sans-serif; 
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    /* New Color Palette - Rich Theater Colors */
+    .brand-burgundy {
+      background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%);
+    }
+    .brand-gold {
+      background: linear-gradient(135deg, #ca8a04 0%, #eab308 100%);
+    }
+    .brand-navy {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    }
+    .brand-emerald {
+      background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    }
+    .brand-purple {
+      background: linear-gradient(135deg, #6b21a8 0%, #7e22ce 100%);
+    }
+    
+    /* Hero with Theater Curtain Pattern */
+    .hero-theater {
+      background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 50%, #450a0a 100%);
+      position: relative;
+    }
+    
+    .hero-theater::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(255,255,255,0.03) 80px, rgba(255,255,255,0.03) 160px);
+      opacity: 0.5;
+    }
+    
+    /* Elegant Pattern Background */
+    .pattern-bg {
+      background-color: #fef3c7;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(202, 138, 4, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(202, 138, 4, 0.1) 0%, transparent 50%);
+    }
+    
+    /* Card Animations */
+    .elegant-card {
+      transition: all 0.4s ease;
+    }
+    
+    .elegant-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(127, 29, 29, 0.2);
+    }
+    
+    /* Historic Badge */
+    .historic-badge {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .historic-badge::before,
+    .historic-badge::after {
+      content: '★';
+      position: absolute;
+      color: #eab308;
+      font-size: 1.5rem;
+      animation: twinkle 2s infinite;
+    }
+    
+    .historic-badge::before {
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .historic-badge::after {
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+  <!-- Meta Tags -->
+  <meta name="description" content="Oceana Theater - Historic 1326-seat venue in Brooklyn, NY. Ideal for concerts, theatrical performances, comedy shows, corporate events, and more. Since 1934." />
+  <meta name="keywords" content="Performing Arts Theater, Concert Venue Brooklyn, Event Space Brooklyn, Live Music Venue Brooklyn, Theater Rental Brooklyn, Oceana Theater, NY" />
+  
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PerformingArtsTheater",
+    "name": "Oceana Theater",
+    "image": "https://oceanatheater.com/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1029 Brighton Beach Ave",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "NY",
+      "postalCode": "11235",
+      "addressCountry": "USA"
+    },
+    "telephone": "+16462001555",
+    "url": "https://oceanatheater.com",
+    "foundingDate": "1934",
+    "sameAs": ["https://www.google.com/maps?cid=2251486623248392015"]
+  }
+  </script>
+</head>
+
+<body class="bg-gray-50">
+  
+  <!-- Elegant Header -->
+  <header class="bg-white/95 backdrop-blur-lg shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-14 h-14 brand-burgundy rounded-2xl flex items-center justify-center text-3xl text-white shadow-lg">
+            🎭
+          </div>
+          <div>
+            <h1 class="font-bold text-2xl text-gray-900">Oceana Theater</h1>
+            <p class="text-xs text-red-800 font-semibold">Brooklyn, NY</p>
+          </div>
+        </a>
+        
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 font-semibold text-gray-700">
+          <a href="#about" class="hover:text-red-800 transition">About</a>
+          <a href="#history" class="hover:text-red-800 transition">History</a>
+          <a href="#events" class="hover:text-red-800 transition">Events</a>
+          <a href="#features" class="hover:text-red-800 transition">Features</a>
+          <a href="#contact" class="hover:text-red-800 transition">Contact</a>
+        </nav>
+        
+        <!-- CTA -->
+        <div class="hidden md:block">
+          <a href="tel:+16462001555" class="brand-gold text-white font-bold py-3 px-6 rounded-full hover:opacity-90 transition shadow-lg">
+            📞 646-200-1555
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden">
+          <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t pt-4">
+        <nav class="flex flex-col gap-3 font-semibold text-gray-700">
+          <a href="#about" class="py-2 hover:text-red-800">About</a>
+          <a href="#history" class="py-2 hover:text-red-800">History</a>
+          <a href="#events" class="py-2 hover:text-red-800">Events</a>
+          <a href="#features" class="py-2 hover:text-red-800">Features</a>
+          <a href="#contact" class="py-2 hover:text-red-800">Contact</a>
+          <a href="tel:+16462001555" class="brand-gold text-white font-bold py-3 px-6 rounded-full text-center shadow-lg">
+            📞 Call Now
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="pt-20">
+    
+    <!-- Hero Section with Theater Theme -->
+    <section class="hero-theater text-white py-24 relative overflow-hidden">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="historic-badge inline-block bg-yellow-500 text-gray-900 px-6 py-2 rounded-full font-bold mb-6">
+          ⭐ Historic Venue Since 1934 ⭐
+        </div>
+        
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+          Oceana Theater
+        </h2>
+        
+        <p class="text-2xl md:text-3xl mb-4 text-yellow-200">
+          Brooklyn's Premier 1326-Seat Venue
+        </p>
+        
+        <p class="text-xl max-w-3xl mx-auto mb-10 opacity-95">
+          Ideal for concerts, theatrical performances, comedy shows, corporate events, conferences, and political meetings
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#contact" class="brand-gold text-white font-bold py-4 px-10 rounded-full hover:opacity-90 transition shadow-2xl text-lg">
+            Book Your Event
+          </a>
+          <a href="tel:+16462001555" class="bg-white text-red-900 font-bold py-4 px-10 rounded-full hover:bg-gray-100 transition shadow-2xl text-lg">
+            📞 646-200-1555
+          </a>
+        </div>
+      </div>
+      
+      <!-- Decorative Bottom -->
+      <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="bg-gray-50 py-12 -mt-10 relative z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white rounded-2xl p-6 text-center shadow-lg elegant-card">
+            <div class="text-4xl font-extrabold text-red-800 mb-2">1934</div>
+            <p class="text-gray-700 font-semibold">Established</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 text-center shadow-lg elegant-card">
+            <div class="text-4xl font-extrabold text-yellow-600 mb-2">1326</div>
+            <p class="text-gray-700 font-semibold">Seats</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 text-center shadow-lg elegant-card">
+            <div class="text-4xl font-extrabold text-blue-800 mb-2">Modern</div>
+            <p class="text-gray-700 font-semibold">Equipment</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 text-center shadow-lg elegant-card">
+            <div class="text-4xl font-extrabold text-emerald-700 mb-2">Prime</div>
+            <p class="text-gray-700 font-semibold">Location</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: About -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+            About <span class="text-red-800">Oceana Theater</span>
+          </h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-red-800 via-yellow-500 to-red-800 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-red-50 to-yellow-50 rounded-3xl shadow-2xl p-8 md:p-12">
+          <p class="text-xl text-gray-800 leading-relaxed mb-6">
+            <strong class="text-red-800">OceanaTheater</strong> is an ideal venue for concerts, theatrical performances, comedy shows, as well as corporate events, conferences, political meetings, and so on.
+          </p>
+          <p class="text-xl text-gray-800 leading-relaxed">
+            Now is a <strong>modern, excellently equipped 1326-seat venue</strong> located in the heart of South Brooklyn's immensely popular Brighton Beach Area, by the beautiful ocean beaches, near convenient transportation means (subway, easy driving access).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Historic Timeline -->
+    <section id="history" class="py-20 pattern-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+            Our <span class="text-red-800">Historic Journey</span>
+          </h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-red-800 via-yellow-500 to-red-800 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+            <div class="space-y-8">
+              <!-- Timeline Item 1 -->
+              <div class="flex items-start gap-6">
+                <div class="flex-shrink-0 w-24 h-24 brand-burgundy rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">
+                  1934
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">OceanaTheater Opens</h3>
+                  <p class="text-lg text-gray-700">
+                    The venue first opened its doors in 1934, becoming a cultural landmark in Brooklyn.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Timeline Item 2 -->
+              <div class="flex items-start gap-6">
+                <div class="flex-shrink-0 w-24 h-24 brand-navy rounded-2xl flex items-center justify-center text-white font-bold text-lg shadow-lg text-center">
+                  Later<br>Years
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Atlantic Oceana Era</h3>
+                  <p class="text-lg text-gray-700">
+                    Known as the Atlantic Oceana, then the Millennium Theater and the Master Theater.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Timeline Item 3 -->
+              <div class="flex items-start gap-6">
+                <div class="flex-shrink-0 w-24 h-24 brand-gold rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">
+                  2022
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Return to Historic Name</h3>
+                  <p class="text-lg text-gray-700">
+                    In 2022, the theater proudly returned to its historical name - Oceana Theater.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Events & Services -->
+    <section id="events" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+            Perfect For <span class="text-red-800">Every Event</span>
+          </h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-red-800 via-yellow-500 to-red-800 mx-auto rounded-full"></div>
+          <p class="text-xl text-gray-600 mt-6">
+            Our versatile venue accommodates a wide range of events
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Event Type 1 -->
+          <div class="elegant-card bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 border-2 border-red-200">
+            <div class="w-20 h-20 brand-burgundy rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-lg">
+              🎵
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Concerts</h3>
+            <p class="text-gray-700 text-lg">
+              Host memorable concerts with excellent acoustics and a capacity of 1326 seats.
+            </p>
+          </div>
+          
+          <!-- Event Type 2 -->
+          <div class="elegant-card bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-3xl p-8 border-2 border-yellow-200">
+            <div class="w-20 h-20 brand-gold rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-lg">
+              🎭
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Theatrical Performances</h3>
+            <p class="text-gray-700 text-lg">
+              Bring your theatrical productions to life on our state-of-the-art stage.
+            </p>
+          </div>
+          
+          <!-- Event Type 3 -->
+          <div class="elegant-card bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border-2 border-blue-200">
+            <div class="w-20 h-20 brand-navy rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-lg">
+              😂
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Comedy Shows</h3>
+            <p class="text-gray-700 text-lg">
+              Perfect setting for comedy performances with intimate audience connection.
+            </p>
+          </div>
+          
+          <!-- Event Type 4 -->
+          <div class="elegant-card bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-3xl p-8 border-2 border-emerald-200">
+            <div class="w-20 h-20 brand-emerald rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-lg">
+              🏢
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Corporate Events</h3>
+            <p class="text-gray-700 text-lg">
+              Professional setting for conferences, meetings, and corporate gatherings.
+            </p>
+          </div>
+          
+          <!-- Event Type 5 -->
+          <div class="elegant-card bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 border-2 border-purple-200">
+            <div class="w-20 h-20 brand-purple rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-lg">
+              🎤
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Political Meetings</h3>
+            <p class="text-gray-700 text-lg">
+              Ideal venue for political rallies, town halls, and community gatherings.
+            </p>
+          </div>
+          
+          <!-- Event Type 6 -->
+          <div class="elegant-card bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 border-2 border-pink-200">
+            <div class="w-20 h-20 brand-burgundy rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-lg">
+              🎉
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Special Events</h3>
+            <p class="text-gray-700 text-lg">
+              Conferences, galas, award ceremonies, and other memorable occasions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Features & Amenities -->
+    <section id="features" class="py-20 pattern-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+            World-Class <span class="text-red-800">Features</span>
+          </h2>
+          <div class="w-32 h-1 bg-gradient-to-r from-red-800 via-yellow-500 to-red-800 mx-auto rounded-full"></div>
+          <p class="text-xl text-gray-600 mt-6">
+            Modern excellence meets historic elegance
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl">
+            <div class="flex items-start gap-6">
+              <div class="text-6xl">🎪</div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">1326 Seats</h3>
+                <p class="text-lg text-gray-700">
+                  Spacious seating capacity perfect for large audiences while maintaining intimate atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl">
+            <div class="flex items-start gap-6">
+              <div class="text-6xl">🎛️</div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Modern Equipment</h3>
+                <p class="text-lg text-gray-700">
+                  State-of-the-art sound, lighting, and stage equipment for professional productions.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl">
+            <div class="flex items-start gap-6">
+              <div class="text-6xl">🏖️</div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Brighton Beach Location</h3>
+                <p class="text-lg text-gray-700">
+                  Heart of South Brooklyn by beautiful ocean beaches in the popular Brighton Beach area.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl">
+            <div class="flex items-start gap-6">
+              <div class="text-6xl">🚇</div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Convenient Transportation</h3>
+                <p class="text-lg text-gray-700">
+                  Easy access via subway and driving, with convenient parking options nearby.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 5 -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl">
+            <div class="flex items-start gap-6">
+              <div class="text-6xl">🎬</div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Professional Stage</h3>
+                <p class="text-lg text-gray-700">
+                  Large professional stage with excellent sightlines from every seat in the house.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 6 -->
+          <div class="bg-white rounded-3xl p-8 shadow-xl">
+            <div class="flex items-start gap-6">
+              <div class="text-6xl">🏛️</div>
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Historic Architecture</h3>
+                <p class="text-lg text-gray-700">
+                  Beautiful historic architecture blended with modern comfort and amenities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+            Frequently Asked <span class="text-red-800">Questions</span>
+          </h2>
+        </div>
+        
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="bg-gray-50 rounded-xl overflow-hidden shadow">
+            <button class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left hover:bg-gray-100 transition">
+              <span class="font-bold text-lg text-gray-900">What is the seating capacity of Oceana Theater?</span>
+              <svg class="w-6 h-6 text-red-800 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-gray-700">
+              Oceana Theater offers a spacious 1326-seat capacity, making it perfect for large concerts, theatrical performances, corporate events, and community gatherings.
+            </div>
+          </div>
+          
+          <!-- FAQ 2 -->
+          <div class="bg-gray-50 rounded-xl overflow-hidden shadow">
+            <button class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left hover:bg-gray-100 transition">
+              <span class="font-bold text-lg text-gray-900">What types of events can be hosted?</span>
+              <svg class="w-6 h-6 text-red-800 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-gray-700">
+              Our venue is ideal for concerts, theatrical performances, comedy shows, corporate events, conferences, political meetings, and community events.
+            </div>
+          </div>
+          
+          <!-- FAQ 3 -->
+          <div class="bg-gray-50 rounded-xl overflow-hidden shadow">
+            <button class="faq-toggle w-full flex justify-between items-center px-6 py-5 text-left hover:bg-gray-100 transition">
+              <span class="font-bold text-lg text-gray-900">How can I book the theater?</span>
+              <svg class="w-6 h-6 text-red-800 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="faq-content hidden px-6 pb-5 text-gray-700">
+              Call us at <a href="tel:+16462001555" class="font-bold text-red-800">646-200-1555</a> or visit <a href="https://oceanatheater.com" class="font-bold text-red-800">oceanatheater.com</a> to book your event.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-red-900 via-red-800 to-red-900 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 text-white">
+          <h2 class="text-5xl font-extrabold mb-4">Book Your Event Today</h2>
+          <p class="text-2xl text-yellow-200">Experience the magic of Oceana Theater</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Contact Info -->
+          <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+            <h3 class="text-3xl font-bold text-white mb-8">Get in Touch</h3>
+            
+            <div class="space-y-6 text-white">
+              <div class="flex items-start gap-4">
+                <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                  📍
+                </div>
+                <div>
+                  <p class="font-bold text-xl mb-1">Address</p>
+                  <p class="text-lg opacity-90">1029 Brighton Beach Ave<br>Brooklyn, NY 11235</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                  📞
+                </div>
+                <div>
+                  <p class="font-bold text-xl mb-1">Phone</p>
+                  <a href="tel:+16462001555" class="text-2xl font-bold hover:text-yellow-300 transition">646-200-1555</a>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                  🌐
+                </div>
+                <div>
+                  <p class="font-bold text-xl mb-1">Website</p>
+                  <a href="https://oceanatheater.com" target="_blank" class="text-lg hover:text-yellow-300 transition">oceanatheater.com</a>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-14 h-14 bg-yellow-500 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                  💳
+                </div>
+                <div>
+                  <p class="font-bold text-xl mb-1">Payment Methods</p>
+                  <p class="text-lg opacity-90">Credit Card & Cash Accepted</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8">
+              <a href="tel:+16462001555" class="block brand-gold text-white font-bold py-4 px-8 rounded-full text-center hover:opacity-90 transition shadow-2xl text-lg">
+                📞 Call Now to Book
+              </a>
+            </div>
+          </div>
+          
+          <!-- Map -->
+          <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-4 border border-white/20">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.3193967117013!2d-73.9582977!3d40.5787048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245ffe5d99b29%3A0x1f3ee327ab439f4f!2sOceana%20Theater!5e0!3m2!1sen!2s!4v1771058714222!5m2!1sen!2s" 
+              width="100%" 
+              height="450" 
+              style="border:0; border-radius: 1.5rem;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+            <div class="mt-4 text-center">
+              <a href="https://www.google.com/maps?cid=2251486623248392015" target="_blank" class="inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition shadow-xl">
+                📍 View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keywords -->
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-2xl font-bold text-center mb-8 text-gray-900">Related Searches</h3>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-5 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold">Performing Arts Center</span>
+          <span class="px-5 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">Performing Arts Theater</span>
+          <span class="px-5 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">Venue Space Brooklyn</span>
+          <span class="px-5 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-semibold">Community Events</span>
+          <span class="px-5 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold">Live Music Venue Brooklyn</span>
+          <span class="px-5 py-2 bg-pink-100 text-pink-800 rounded-full text-sm font-semibold">Music Venue Brooklyn</span>
+          <span class="px-5 py-2 bg-red-100 text-red-800 rounded-full text-sm font-semibold">Event Space Brooklyn</span>
+          <span class="px-5 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">Concert Venue Brooklyn</span>
+          <span class="px-5 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">Private Theater Rental Brooklyn</span>
+          <span class="px-5 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-semibold">Event Hall Rental Brooklyn</span>
+          <span class="px-5 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold">Brooklyn, NY</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 brand-burgundy rounded-xl flex items-center justify-center text-2xl">
+              🎭
+            </div>
+            <div>
+              <h4 class="text-xl font-bold">Oceana Theater</h4>
+              <p class="text-sm text-gray-400">Since 1934</p>
+            </div>
+          </div>
+          <p class="text-gray-400">
+            Brooklyn's premier 1326-seat venue for concerts, theater, comedy, and special events.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+          <div class="space-y-2">
+            <a href="#about" class="block text-gray-400 hover:text-white transition">About</a>
+            <a href="#history" class="block text-gray-400 hover:text-white transition">History</a>
+            <a href="#events" class="block text-gray-400 hover:text-white transition">Events</a>
+            <a href="#features" class="block text-gray-400 hover:text-white transition">Features</a>
+            <a href="#contact" class="block text-gray-400 hover:text-white transition">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-xl font-bold mb-4">Contact</h4>
+          <div class="text-gray-400 space-y-2">
+            <p>📍 1029 Brighton Beach Ave<br>Brooklyn, NY 11235</p>
+            <p>📞 <a href="tel:+16462001555" class="hover:text-white transition">646-200-1555</a></p>
+            <p>🌐 <a href="https://oceanatheater.com" class="hover:text-white transition">oceanatheater.com</a></p>
+            <p>💳 CC & Cash Accepted</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+        <p>&copy; <span id="year"></span> Oceana Theater. All Rights Reserved.</p>
+        <p class="mt-2 text-sm">Historic Brooklyn venue serving the community since 1934</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Button -->
+  <a href="tel:+16462001555" class="fixed bottom-6 right-6 brand-gold text-white p-5 rounded-full shadow-2xl hover:opacity-90 transition z-50">
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+    
+    // FAQ Toggle
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('svg');
+        
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
